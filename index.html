@@ -1,27 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Message for the future</title>
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
     <main>
-        <header>
-            <h1>Sua mensagem para o futuro</h1>
-            <p class="subtitulo">O que você diria para si mesmo daqui a alguns meses
+      <header>
 
-        <section class="caixa">
-            <label for="textarea">Sua mensagem:</label>
-            <textarea name="textarea" id="textarea"></textarea>
-        </section>
+        <h1>Sua mensagem para o futuro</h1>
+        <p class="subtitulo">O que você diria para si mesmo daqui a alguns meses?</p>
 
+        <form class="caixa" action="#" method="post">
+          <label for="textarea">Sua mensagem:</label>
+          <textarea name="textarea" id="textarea" required></textarea>
+
+          <label for="email">Qual seu melhor email?</label>
+          <input  id="email" type="email" placeholder="Digite seu email" required/>
+
+          <label for="date">Quando você quer receber a mensagem?</label>
+          <input id="date" type="date" required />
+
+          <button type="submit">Enviar</button>
+        </form>
+
+      </header>
+
+      <footer>Message for the future. Por <span>Alex Garcia</span></footer>
     </main>
-    
-
-
-
-</body>
+  </body>
 </html>
